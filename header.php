@@ -106,13 +106,13 @@
 <body <?php body_class(); ?> id="<?php echo is_font_style(); ?>">
     <div id="wrapper">
 
-        <a href='https://twitter.com/shusgw' class="tw_link" target="_blank" rel="noopener noreferrer">
+        <div class="tw_link" target="_blank" rel="noopener noreferrer">
             <i class=" jic jic jin-ifont-batu" id='toggle_original_twBtn'></i>
-            <div class="tw_link_innerBox">
+            <a href='https://twitter.com/shusgw' class="tw_link_innerBox">
                 ツイッターを<br class='only_mb'>フォロー！
                 <i class=" jic-type jin-ifont-twitter"></i>
-            </div>
-        </a>
+            </a>
+        </div>
 
         <?php if (is_mobile()) : ?>
         <span class=" headsearch jin-sp-design <?php is_animation_style(); ?> <?php is_top_navi_sc_display(); ?>">
