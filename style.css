@@ -6,3 +6,92 @@ Template:       jin
 
 (optional values you can add: Theme URI, Author URI, Version, License, License URI, Tags, Text Domain)
 */
+
+.tw_link {
+  display: none;
+  background-color: #3b4675ed;
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  z-index: 999;
+  width: 200px;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 10px;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Sans", "ヒラギノ角ゴ ProN W3",
+    "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+}
+
+.tw_link--active {
+  display: flex;
+}
+
+.tw_link .jin-ifont-twitter {
+  color: white;
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.tw_link .tw_link_innerBox {
+  color: white !important;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1da1f2;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+.tw_link .jin-ifont-batu {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  cursor: pointer;
+  display: block;
+  color: white !important;
+  font-size: 15px;
+}
+.tw_link .jin-ifont-batu:hover {
+  color: black !important;
+}
+
+/* 767 */
+
+@media (max-width: 767px) {
+  .tw_link {
+    background-color: #3b4675ed;
+    position: fixed;
+    bottom: 40%;
+    left: 0;
+    z-index: 999;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    font-size: 8px;
+    text-align: center;
+  }
+
+  .tw_link .jin-ifont-twitter {
+    font-size: 30px;
+    margin-top: 5px;
+  }
+
+  .tw_link .jin-ifont-batu {
+    font-size: 15px;
+  }
+}
+
+.only_mb {
+  display: none;
+}
+@media (max-width: 767px) {
+  .only_mb {
+    display: block;
+  }
+}
