@@ -11,7 +11,6 @@ function theme_enqueue_styles() {
         get_stylesheet_directory_uri() . '/style.css',
         array('parent-style')
     );
-    wp_enqueue_script('child_main', get_stylesheet_directory_uri() . '/assets/js/child.js', '', '', true);
 }
 //
 // Your code goes below
